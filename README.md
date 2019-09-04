@@ -1,16 +1,28 @@
 ## Test Package
 
 ```bash
-pipenv install pip setuptools whell tqdm twine
+pipenv install pip setuptools wheel tqdm twine
 chmod +x kokoko
 pipenv run python setup.py sdist bdist_wheel
 pipenv run python -m twine upload dist/*
 ```
 
-## Check
+## Local
 
 ```bash
+pipenv install
 pipenv run pip install dist/kokoko-0.2-py3-none-any.whl
-pipenv run pip install kokoko
+```
+
+## Remote
+
+```bash
+pipenv install kokoko
 pipenv run kokoko
+```
+
+## Uninstall
+
+```bash
+pipenv uninstall kokoko
 ```
