@@ -1,4 +1,4 @@
-## Test Package
+## Test
 
 ```bash
 pipenv install pip setuptools wheel tqdm twine
@@ -10,8 +10,8 @@ pipenv run python -m twine upload dist/*
 ## Local
 
 ```bash
-pipenv install
 pipenv run pip install dist/kokoko-0.2-py3-none-any.whl
+pipenv run pip uninstall dist/kokoko-0.2-py3-none-any.whl
 ```
 
 ## Remote
@@ -19,10 +19,5 @@ pipenv run pip install dist/kokoko-0.2-py3-none-any.whl
 ```bash
 pipenv install kokoko
 pipenv run kokoko
-```
-
-## Uninstall
-
-```bash
 pipenv uninstall kokoko
 ```
