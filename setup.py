@@ -5,7 +5,7 @@ with open ("README.md", "r") as fn:
 
 setuptools.setup(
     name = "kokoko",
-    version= "0.2",
+    version= "0.3",
     scripts=["kokoko"],
     author="wk-j",
     author_email="somnuk.wk@gmail.com",

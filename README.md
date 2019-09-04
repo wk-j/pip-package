@@ -10,8 +10,8 @@ pipenv run python -m twine upload dist/*
 ## Local
 
 ```bash
-pipenv run pip install dist/kokoko-0.2-py3-none-any.whl
-pipenv run pip uninstall dist/kokoko-0.2-py3-none-any.whl
+pipenv run pip install dist/kokoko-0.3-py3-none-any.whl
+pipenv run pip uninstall dist/kokoko-0.3-py3-none-any.whl
 ```
 
 ## Remote
@@ -20,4 +20,10 @@ pipenv run pip uninstall dist/kokoko-0.2-py3-none-any.whl
 pipenv install kokoko
 pipenv run kokoko
 pipenv uninstall kokoko
+```
+
+## Check
+
+```bash
+pipenv run python check/p.py
 ```
